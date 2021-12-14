@@ -7,7 +7,7 @@ var api_routes = require('./routes.js');
 app.use('/api', api_routes);
 
 console.log(__dirname);
-app.use('/homepage', express.static(__dirname + 'front_end'));
+app.use('/homepage', express.static(__dirname + '/front_end'));
 
 
 app.listen(port, function(){
